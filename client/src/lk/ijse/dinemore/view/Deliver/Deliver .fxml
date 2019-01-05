@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="674.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.Controller.Reception.ReceptionOderController">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="813.0" style="-fx-background-color: #464242;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="263.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/cropped-dinemoreweblogo.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#0dff3f" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="11.0" layoutY="130.0" prefHeight="188.0" prefWidth="394.0">
+         <columns>
+            <TableColumn prefWidth="86.0" text="OID" />
+            <TableColumn prefWidth="170.0" text="customer Name" />
+            <TableColumn prefWidth="137.0" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="285.0" layoutY="335.0" prefHeight="30.0" prefWidth="121.0" style="-fx-background-color: #C12F23;" text="get Oder" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="76.0" prefHeight="40.0" prefWidth="787.0" style="-fx-background-color: #00F3FF; -fx-background-radius: 20;" text="Oders">
+         <font>
+            <Font name="Quarca-ConLig" size="34.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <TableView layoutX="11.0" layoutY="402.0" prefHeight="225.0" prefWidth="394.0">
+         <columns>
+            <TableColumn prefWidth="84.0" text="item Code" />
+            <TableColumn prefWidth="107.0" text="item Name" />
+            <TableColumn prefWidth="98.0" text="item Descption" />
+            <TableColumn prefWidth="97.0" text="QTY" />
+         </columns>
+      </TableView>
+      <TextField layoutX="374.0" layoutY="26.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="313.0" layoutY="26.0" prefHeight="30.0" prefWidth="45.0" text="DID" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="638.0" layoutY="26.0" prefHeight="30.0" prefWidth="110.0" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="537.0" layoutY="26.0" prefHeight="30.0" prefWidth="85.0" text="Deliver Name" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView layoutX="440.0" layoutY="131.0" prefHeight="498.0" prefWidth="352.0">
+         <columns>
+            <TableColumn prefWidth="187.0" text="OID" />
+            <TableColumn prefWidth="164.0" text="Address" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="692.0" layoutY="645.0" prefHeight="29.0" prefWidth="121.0" style="-fx-background-color: #2e7d32;" text="Print" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1356.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.Controller.Admin.AdminController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="114.0" style="-fx-background-color: #272525;">
+         <children>
+            <JFXButton fx:id="btnDashboard" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="10.0" layoutY="98.0" onMouseClicked="#mouseClickedDashboard" prefHeight="91.0" prefWidth="91.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="Dashboard" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageDashboard" fitHeight="56.0" fitWidth="55.0" onMouseExited="#imageDashboardExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_Speed_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnOders" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="12.0" layoutY="199.0" onMouseClicked="#mouseClickedOders" prefHeight="91.0" prefWidth="91.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="view Oders" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageCustomer" fitHeight="56.0" fitWidth="55.0" onMouseEntered="#imageDashboardEntered" onMouseExited="#imageDashboardExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_User_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnEmploye" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="12.0" layoutY="300.0" onMouseClicked="#mouseClickedEmploye" prefHeight="91.0" prefWidth="91.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="Employe" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageEmploye" fitHeight="56.0" fitWidth="55.0" onMouseEntered="#imageDashboardEntered" onMouseExited="#imageDashboardExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_Meeting_100px_3.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnItems" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="12.0" layoutY="405.0" onMouseClicked="#mouseClickedItem" prefHeight="91.0" prefWidth="91.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="Items" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageItems" fitHeight="56.0" fitWidth="55.0" onMouseEntered="#imageDashboardEntered" onMouseExited="#imageDashboardExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_Add_Shopping_Cart_100px_1.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnReport" alignment="CENTER" buttonType="RAISED" contentDisplay="TOP" layoutX="12.0" layoutY="513.0" onMouseClicked="#mouseClickedReport" prefHeight="91.0" prefWidth="91.0" style="-fx-border-color: #4D4D4D; -fx-border-width: 0.3;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="Report" textFill="#c3c0c0">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fx:id="imageReport" fitHeight="56.0" fitWidth="55.0" onMouseEntered="#imageDashboardEntered" onMouseExited="#imageDashboardExited" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/icons8_Photo_Gallery_100px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="114.0" prefHeight="63.0" prefWidth="1242.0" style="-fx-background-color: #DBE0E1;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="263.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/cropped-dinemoreweblogo.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pnlMan" layoutX="114.0" layoutY="63.0" prefHeight="636.0" prefWidth="1242.0" />
+   </children>
+</AnchorPane>

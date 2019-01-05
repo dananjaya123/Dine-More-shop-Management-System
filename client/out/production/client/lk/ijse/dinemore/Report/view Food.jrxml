@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2018-11-25T09:47:59 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="view Food" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="beab0e55-1997-4727-a7a6-36e91151f7b3">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (5)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from item]]>
+	</queryString>
+	<field name="ItemID" class="java.lang.String"/>
+	<field name="item_Discription" class="java.lang.String"/>
+	<field name="item_Name" class="java.lang.String"/>
+	<field name="item_Price" class="java.lang.Double"/>
+	<group name="ItemID">
+		<groupExpression><![CDATA[$F{ItemID}]]></groupExpression>
+	</group>
+	<group name="item_Discription">
+		<groupExpression><![CDATA[$F{item_Discription}]]></groupExpression>
+	</group>
+	<group name="item_Name">
+		<groupExpression><![CDATA[$F{item_Name}]]></groupExpression>
+	</group>
+	<group name="item_Price">
+		<groupExpression><![CDATA[$F{item_Price}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="0" width="612" height="60" uuid="fed10559-b685-4c16-98ef-eee0857c4cc3"/>
+				<textElement textAlignment="Center">
+					<font size="20" isBold="false"/>
+				</textElement>
+				<text><![CDATA[View Item]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="53" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="14" width="143" height="30" uuid="6c325de0-ae89-4662-8d73-05687670ac25"/>
+				<textFieldExpression><![CDATA[$F{ItemID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="143" y="14" width="143" height="30" uuid="a61c43b1-4cbd-4d34-b52d-100828dea180"/>
+				<textFieldExpression><![CDATA[$F{item_Discription}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="14" width="143" height="30" uuid="4433ff60-52b4-4fb8-be05-cfa9eddbc9d2"/>
+				<textFieldExpression><![CDATA[$F{item_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="429" y="14" width="143" height="30" uuid="56629935-d0d5-43f4-9853-4e48b6a50d27"/>
+				<textFieldExpression><![CDATA[$F{item_Price}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

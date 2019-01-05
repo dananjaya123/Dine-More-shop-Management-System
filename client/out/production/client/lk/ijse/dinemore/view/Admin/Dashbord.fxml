@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pnlDashbord" prefHeight="636.0" prefWidth="1242.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.Controller.Admin.DashbordController">
+   <children>
+      <AnchorPane layoutX="33.0" layoutY="38.0" prefHeight="110.0" prefWidth="192.0" style="-fx-background-color: #0FD8FF;">
+         <children>
+            <Label alignment="CENTER" layoutY="81.0" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #11B9C7;" text="34" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="112.0" text="Daly Income">
+               <font>
+                  <Font name="Quarca-ConLig" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="77.0" layoutX="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Cash_in_Hand_100px.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="356.0" layoutY="38.0" prefHeight="110.0" prefWidth="192.0" style="-fx-background-color: #0FAAFF;">
+         <children>
+            <Label alignment="CENTER" layoutY="81.0" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #1076AF;" text="we32" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label prefHeight="36.0" prefWidth="54.0" text="chef">
+               <font>
+                  <Font name="Quarca-ConLig" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="77.0" layoutX="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Chef_100px_2.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="662.0" layoutY="38.0" prefHeight="110.0" prefWidth="192.0" style="-fx-background-color: #FFCA0F;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="81.0" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #FBAD09;" text="7890" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" prefHeight="36.0" prefWidth="77.0" text="Deliver">
+               <font>
+                  <Font name="Quarca-ConLig" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="77.0" layoutX="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Motocross_100px.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="990.0" layoutY="38.0" prefHeight="110.0" prefWidth="192.0" style="-fx-background-color: #F94814; -fx-border-radius: 20%;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="86.0" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #B80505;" text="658" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="1.0" prefHeight="36.0" prefWidth="94.0" text="Reception">
+               <font>
+                  <Font name="Quarca-ConLig" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="73.0" fitWidth="77.0" layoutX="116.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Employee_100px_1.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <Separator layoutX="6.0" layoutY="167.0" prefHeight="10.0" prefWidth="1234.0" />
+      <PieChart layoutX="41.0" layoutY="222.0" prefHeight="308.0" prefWidth="343.0" />
+      <LineChart layoutX="423.0" layoutY="189.0" prefHeight="425.0" prefWidth="791.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

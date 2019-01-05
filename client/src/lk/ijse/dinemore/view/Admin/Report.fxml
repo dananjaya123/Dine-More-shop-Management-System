@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="639.0" prefWidth="1251.0" style="-fx-background-color: #393535;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.Controller.Admin.ReportController">
+   <children>
+      <JFXButton layoutX="394.0" layoutY="285.0" onAction="#DallyCustomerOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #ffcdd2;" text="Dally Customer" />
+      <JFXButton layoutX="530.0" layoutY="174.0" onAction="#DallyChefActin" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #f8bbd0;" text="Dally Chef" />
+      <JFXButton layoutX="671.0" layoutY="174.0" onAction="#DellyReceptionAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #ffebee;" text="Delly Reception" />
+      <JFXButton layoutX="811.0" layoutY="174.0" onAction="#dellyDeliverOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #f48fb1;" text="Delly Deliver" />
+      <JFXButton layoutX="394.0" layoutY="174.0" onAction="#foodManuOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #ce93d8;" text="Food manu" />
+      <JFXButton layoutX="530.0" layoutY="285.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #f06292;" text="Best Dally Food" />
+      <JFXButton layoutX="671.0" layoutY="285.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #e57373;" text="Best  Chef" />
+      <JFXButton layoutX="811.0" layoutY="285.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #ef9a9a;" text="Best  Deliver" />
+      <JFXButton layoutX="394.0" layoutY="382.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #81c784;" text="Dally income" />
+      <JFXButton layoutX="530.0" layoutY="382.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #dce775;" text="Monthly income" />
+      <JFXButton layoutX="671.0" layoutY="382.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #69f0ae;" text="Oder Details" />
+      <JFXButton layoutX="811.0" layoutY="382.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: #b9f6ca;" text="Best Customer" />
+   </children>
+</AnchorPane>

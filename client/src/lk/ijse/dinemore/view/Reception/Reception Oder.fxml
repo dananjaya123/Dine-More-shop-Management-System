@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1361.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinemore.Controller.Reception.ReceptionOderController">
+   <children>
+      <AnchorPane prefHeight="63.0" prefWidth="1361.0" style="-fx-background-color: #464242;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="263.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/cropped-dinemoreweblogo.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#0dff3f" />
+               </effect>
+            </ImageView>
+            <TextField fx:id="textSearch" layoutX="483.0" layoutY="16.0" onAction="#searchOnActon" prefHeight="30.0" prefWidth="304.0" style="-fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="btnSearch" alignment="CENTER" layoutX="409.0" layoutY="19.0" onDragDetected="#btnSearchOnAction" prefHeight="25.0" prefWidth="59.0" style="-fx-background-radius: 20;" styleClass="menuButton" stylesheets="@../../css/Home.css" text="Search" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConLig" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textStatus" layoutX="821.0" layoutY="16.0" onAction="#statusOnAction" prefHeight="30.0" prefWidth="157.0" style="-fx-background-radius: 20;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label fx:id="lablTime" layoutX="1170.0" layoutY="10.0" prefHeight="40.0" prefWidth="178.0" textFill="WHITE">
+               <font>
+                  <Font name="Quarca-ConLig" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="23.0" layoutY="73.0" prefHeight="322.0" prefWidth="319.0" style="-fx-background-color: #e0e0e0; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="319.0" style="-fx-background-color: #00F3FF; -fx-background-radius: 20;" text="Customer Details">
+               <font>
+                  <Font name="Quarca-ConLig" size="34.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <JFXTextField fx:id="textCustomerName" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="136.0" onAction="#customerNameOnAction" prefHeight="25.0" prefWidth="298.0" promptText="Customer Name" />
+            <JFXTextField fx:id="textCustomerAddress" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="180.0" onAction="#customerAddressOnAction" prefHeight="25.0" prefWidth="298.0" promptText="Deliver Address" />
+            <JFXTextField fx:id="textCustomerPhoneNum" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="225.0" onAction="#customerPhoneNum" prefHeight="25.0" prefWidth="298.0" promptText="Phone Number" />
+            <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Inquiry_100px.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXTextField fx:id="textCustomweNIC" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="89.0" onAction="#customweNICOnAction" prefHeight="25.0" prefWidth="298.0" promptText="NIC" />
+            <JFXTextField fx:id="textCustomerID" focusColor="BLACK" layoutX="12.0" layoutY="46.0" onAction="#customerIDOnAction" prefHeight="25.0" prefWidth="125.0" promptText="Customer ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="385.0" layoutY="73.0" prefHeight="322.0" prefWidth="319.0" style="-fx-background-color: #e0e0e0; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Label alignment="CENTER" prefHeight="40.0" prefWidth="319.0" style="-fx-background-color: #00F3FF; -fx-background-radius: 20;" text="Order Detail">
+               <font>
+                  <Font name="Quarca-ConLig" size="34.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <ImageView fitHeight="34.0" fitWidth="47.0" layoutX="42.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image/icons8_Weber_100px.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <JFXTextField fx:id="textItemCode" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="125.0" onAction="#itemCodeOnAction" prefHeight="25.0" prefWidth="133.0" promptText="ItemCode" />
+            <JFXTextField fx:id="textItemPrice" focusColor="BLACK" labelFloat="true" layoutX="119.0" layoutY="183.0" onAction="#itemPricrOnAction" prefHeight="25.0" prefWidth="190.0" promptText="Item Price" />
+            <JFXComboBox fx:id="comboItemName" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="69.0" onAction="#comboItemNameOnActon" prefHeight="25.0" prefWidth="133.0" promptText="item Nmae" />
+            <JFXTextField fx:id="textQTY" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="183.0" onAction="#qtyOnAction" prefHeight="25.0" prefWidth="83.0" promptText="QTY" />
+            <JFXButton fx:id="btnItemAdd" layoutX="254.0" layoutY="279.0" onAction="#btnItemAddOnAction" prefHeight="29.0" prefWidth="51.0" style="-fx-background-color: #C12F23;" text="Add" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="textDescription" focusColor="BLACK" labelFloat="true" layoutX="160.0" layoutY="125.0" onAction="#DescriptionOnAction" prefHeight="25.0" prefWidth="133.0" promptText="Description" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableOder" layoutX="8.0" layoutY="421.0" prefHeight="265.0" prefWidth="1336.0">
+         <columns>
+            <TableColumn prefWidth="139.99996948242188" text="NIC" />
+            <TableColumn prefWidth="121.0" text="Customer Name" />
+            <TableColumn prefWidth="188.0" text="Deliver Address" />
+            <TableColumn prefWidth="158.0" text="Phone Number" />
+            <TableColumn prefWidth="156.0" text="ItemCode" />
+            <TableColumn prefWidth="132.0" text="Item" />
+            <TableColumn prefWidth="181.0" text="item Description" />
+            <TableColumn prefWidth="146.0" text="Full Amount" />
+            <TableColumn prefWidth="125.0" text="Date" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <TableView fx:id="tblitem" layoutX="735.0" layoutY="118.0" prefHeight="217.0" prefWidth="597.0">
+        <columns>
+          <TableColumn prefWidth="115.0" text="item code" />
+          <TableColumn prefWidth="120.0" text="Qty" />
+            <TableColumn prefWidth="120.0" text="item " />
+            <TableColumn prefWidth="120.0" text="item Description" />
+            <TableColumn prefWidth="120.0" text="price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnUpdate" layoutX="1070.0" layoutY="361.0" onAction="#btnUbdateOnAction" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #004d40;" text="Update" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="1167.0" layoutY="361.0" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #006442;" text="Delete" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="1264.0" layoutY="361.0" onAction="#btnSaveOnAtion" prefHeight="29.0" prefWidth="68.0" style="-fx-background-color: #C12F23;" text="Save" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="textRID" focusColor="BLACK" labelFloat="true" layoutX="735.0" layoutY="73.0" onAction="#ridOnAction" prefHeight="25.0" prefWidth="144.0" promptText="RID" />
+      <TextField fx:id="textFullAmount" layoutX="864.0" layoutY="361.0" onAction="#fullAmount" prefHeight="30.0" prefWidth="157.0" style="-fx-background-radius: 20;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="748.0" layoutY="361.0" prefHeight="29.0" prefWidth="89.0" text="Full Amount">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="textOID" focusColor="BLACK" labelFloat="true" layoutX="912.0" layoutY="73.0" onAction="#OidOnAction" prefHeight="25.0" prefWidth="144.0" promptText="OID" />
+      <Label fx:id="lblDate" layoutX="1138.0" layoutY="66.0" prefHeight="40.0" prefWidth="178.0">
+         <font>
+            <Font name="Quarca-ConLig" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
